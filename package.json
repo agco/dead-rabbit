@@ -1,0 +1,26 @@
+{
+  "name": "dead-rabbit",
+  "version": "1.0.0",
+  "description": "A tiny dead-letter service for rabbitMQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "rabbitMQ",
+    "wait",
+    "dead",
+    "letter",
+    "queue"
+  ],
+  "author": "Braden O'Guinn",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "amqp": "^0.2.4",
+    "bluebird": "^2.10.2"
+  }
+}
