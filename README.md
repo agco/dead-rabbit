@@ -2,6 +2,12 @@
 A small library of helper functions for creating and pushing to dead letter 
 queues for AMQP. It includes options for gradual run off on message expiration.
 
+AMQP is a message protocol like HTTP, but revolves around queues that maximize
+guaranteed eventual completion out-of-the-box. If a task fails once, it can be
+retried a number of times, and this module allows tasks that have failed to complete
+after a given period of time to be automatically pushed to a waiting queue that
+increases the timeout gradually.
+
 Based on the [blog post](http://dev.venntro.com/2014/07/back-off-and-retry-with-rabbitmq/) by Josh Hill.
 
 ## Example
