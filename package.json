@@ -1,6 +1,6 @@
 {
   "name": "dead-rabbit",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A tiny dead-letter service for rabbitMQ",
   "main": "index.js",
   "scripts": {
